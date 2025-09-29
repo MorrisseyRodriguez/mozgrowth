@@ -6,13 +6,16 @@ const FinalCTA = () => {
     <section className="py-24 px-6 relative overflow-hidden">
       {/* Background */}
       <div 
-        className="absolute inset-0 parallax-bg"
+        className="absolute inset-0 parallax-bg hidden md:block"
         style={{
           backgroundImage: 'url(/assets/images/IMG_20250926_160310.jpg)',
         }}
       >
-        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="absolute inset-0 bg-black/80 md:bg-black/80"></div>
       </div>
+      
+      {/* Mobile background - solid color only */}
+      <div className="absolute inset-0 bg-dark-900 md:hidden"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 animate-fade-in-up">
