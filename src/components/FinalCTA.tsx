@@ -8,7 +8,7 @@ const FinalCTA = () => {
       <div 
         className="absolute inset-0 parallax-bg"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/src/Assets/Image of Moz/IMG_20250926_160310.jpg)',
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
