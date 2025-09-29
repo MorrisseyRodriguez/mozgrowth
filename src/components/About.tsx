@@ -12,30 +12,13 @@ const About = () => {
           {/* Left: Image */}
           <div className="animate-slide-in-left">
             {/* Mobile: Horizontal Layout */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 lg:hidden">
-              <div className="relative flex-1">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent rounded-2xl"></div>
-                <img 
-                  src="/assets/images/moz-bio-1.jpg"
-                  alt="Marketing Strategist"
-                  className="w-full h-64 sm:h-48 object-cover rounded-2xl shadow-2xl"
-                />
-              </div>
-              
-              {/* Horizontal Connecting Line for Mobile */}
-              <div className="hidden sm:flex sm:flex-col justify-center items-center">
-                <div className="h-px w-16 sm:w-px sm:h-16 bg-gradient-to-r sm:bg-gradient-to-b from-blue-500 to-blue-300 relative">
-                  <div className="absolute left-0 sm:left-1/2 top-1/2 sm:top-0 transform -translate-y-1/2 sm:-translate-x-1/2 sm:translate-y-0 w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <div className="absolute right-0 sm:left-1/2 top-1/2 sm:bottom-0 transform -translate-y-1/2 sm:-translate-x-1/2 sm:translate-y-0 w-3 h-3 bg-blue-300 rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="relative flex-1">
+            <div className="lg:hidden">
+              <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent rounded-2xl"></div>
                 <img 
                   src="/assets/images/moz-bio-2.jpg"
                   alt="Marketing Results Screenshot"
-                  className="w-full h-64 sm:h-48 object-cover rounded-2xl shadow-2xl"
+                  className="w-full h-64 object-cover rounded-2xl shadow-2xl"
                 />
               </div>
             </div>
