@@ -42,14 +42,6 @@ const About = () => {
             
             {/* Desktop: Vertical Layout */}
             <div className="hidden lg:block">
-              {/* Vertical Connecting Line for Desktop */}
-              <div className="flex justify-center my-8">
-                <div className="w-px h-16 bg-gradient-to-b from-blue-500 to-blue-300 relative">
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-blue-300 rounded-full"></div>
-                </div>
-              </div>
-              
               <div className="relative">
                 <img 
                   src="/assets/images/moz-bio-2.jpg"
