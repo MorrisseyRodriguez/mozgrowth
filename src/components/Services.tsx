@@ -18,7 +18,7 @@ const Services = () => {
     {
       icon: Target,
       title: 'Strategic Focus',
-      description: 'I take your specific goals and create a custom plan to achieve them using proven Google Ads and website strategies.',
+      description: 'I take your specific goals and create a custom plan to achieve them with marketing that connects your fleet to the high-intent customers looking for exactly what you offer.',
       features: ['Goal-oriented planning', 'Custom strategy development', 'Results-focused execution']
     }
   ];
