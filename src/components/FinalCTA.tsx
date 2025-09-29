@@ -56,6 +56,9 @@ const FinalCTA = () => {
         </div>
       </div>
 
+      {/* Mobile Background */}
+      <div className="absolute inset-0 bg-dark-900 md:hidden"></div>
+
       {/* Footer */}
       <footer className="relative z-10 mt-24 pt-12 border-t border-blue-500/20">
         <div className="max-w-7xl mx-auto text-center">
