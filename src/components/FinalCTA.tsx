@@ -38,14 +38,9 @@ const FinalCTA = () => {
         {/* Trust Indicators */}
         <div className="grid grid-cols-3 gap-4 md:gap-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="text-center">
-        <div className="absolute inset-0 bg-black/80"></div>
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/80"></div>
       </div>
-        <div className="absolute inset-0 bg-black/80"></div>
+      
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
             <div className="text-3xl font-black text-blue-500 mb-2">15 min</div>
             <p className="text-gray-400 text-sm md:text-base">Strategy call duration</p>
           </div>
