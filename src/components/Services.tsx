@@ -38,14 +38,25 @@ const Services = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
+            const isStrategicFocus = service.title === 'Strategic Focus';
             return (
               <div 
                 key={service.title}
-                className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up"
+                className={`bg-dark-700/50 backdrop-blur-sm p-8 rounded-2xl border ${
+                  isStrategicFocus 
+                    ? 'border-gold-500/30 shadow-lg shadow-gold-500/10 hover:shadow-xl hover:shadow-gold-500/20' 
+                    : 'border-blue-500/20'
+                } hover-lift animate-fade-in-up`}
                 style={{ animationDelay: `${0.3 + index * 0.1}s` }}
               >
-                <div className="bg-blue-500/20 p-4 rounded-xl w-fit mb-6">
-                  <IconComponent className="w-8 h-8 text-blue-500" />
+                <div className={`${
+                  isStrategicFocus 
+                    ? 'bg-gradient-to-br from-gold-500/20 to-gold-600/20' 
+                    : 'bg-blue-500/20'
+                } p-4 rounded-xl w-fit mb-6`}>
+                  <IconComponent className={`w-8 h-8 ${
+                    isStrategicFocus ? 'text-gold-400' : 'text-blue-500'
+                  }`} />
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
@@ -54,7 +65,9 @@ const Services = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center gap-3 text-gray-400">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <div className={`w-2 h-2 ${
+                        isStrategicFocus ? 'bg-gold-400' : 'bg-blue-500'
+                      } rounded-full`}></div>
                       {feature}
                     </li>
                   ))}
