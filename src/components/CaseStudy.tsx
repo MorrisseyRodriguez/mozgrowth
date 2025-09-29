@@ -1,89 +1,88 @@
 import React from 'react';
-import { Calendar, Mail, ArrowRight } from 'lucide-react';
+import { TrendingUp, Users, DollarSign, Calendar } from 'lucide-react';
 
 const CaseStudy = () => {
   return (
-    <section className="py-24 px-6 relative overflow-hidden">
-      {/* Background */}
-      <div 
-        className="absolute inset-0 parallax-bg"
-        style={{
-          backgroundImage: 'url(/assets/images/20250926_132206(1).jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/80"></div>
+    <section data-section="case-study" className="py-24 px-6 bg-dark-900">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-black mb-6 animate-fade-in-up">
+            Real <span className="text-gradient-blue">Results</span> for Real Businesses
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            See how exotic car rental businesses are transforming their marketing and booking more premium clients.
+          </p>
+        </div>
+
+        {/* Case Study Card */}
+        <div className="bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-8 md:p-12 mb-16 animate-fade-in-up" 
+             style={{ animationDelay: '0.3s' }}>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent rounded-2xl"></div>
+              <img 
+                src="/assets/images/20250926_132206(1).jpg"
+                alt="Client success story with exotic cars"
+                className="w-full h-80 object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+
+            {/* Right: Results */}
+            <div>
+              <h3 className="text-3xl font-bold mb-6">Miami Luxury Rentals</h3>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                "Working with Morrissey completely transformed our business. We went from struggling to fill our calendar to having a consistent flow of high-value bookings. The strategies he implemented didn't just increase our revenue - they attracted the right kind of clients who appreciate luxury experiences."
+              </p>
+              
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-4 bg-blue-500/10 rounded-lg">
+                  <TrendingUp className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-blue-500">300%</div>
+                  <p className="text-gray-400 text-sm">Revenue Increase</p>
+                </div>
+                
+                <div className="text-center p-4 bg-blue-500/10 rounded-lg">
+                  <Users className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-blue-500">85%</div>
+                  <p className="text-gray-400 text-sm">Booking Rate</p>
+                </div>
+                
+                <div className="text-center p-4 bg-blue-500/10 rounded-lg">
+                  <DollarSign className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-blue-500">$2.5K</div>
+                  <p className="text-gray-400 text-sm">Avg. Booking Value</p>
+                </div>
+                
+                <div className="text-center p-4 bg-blue-500/10 rounded-lg">
+                  <Calendar className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-blue-500">90</div>
+                  <p className="text-gray-400 text-sm">Days to Results</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Results Summary */}
+        <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+          <h3 className="text-2xl font-bold mb-8">The Results Speak for Themselves</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="text-4xl font-black text-blue-500 mb-2">3x</div>
+              <p className="text-gray-300">More qualified leads per month</p>
+            </div>
+            <div>
+              <div className="text-4xl font-black text-blue-500 mb-2">50%</div>
+              <p className="text-gray-300">Higher average booking value</p>
+            </div>
+            <div>
+              <div className="text-4xl font-black text-blue-500 mb-2">24/7</div>
+              <p className="text-gray-300">Automated booking system</p>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 animate-fade-in-up">
-          Ready to Get Your Fleet <span className="text-gradient-blue">Booked Out</span>?
-        </h2>
-        
-        <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" 
-           style={{ animationDelay: '0.2s' }}>
-          Start attracting premium clients who value luxury experiences.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-up" 
-             style={{ animationDelay: '0.4s' }}>
-          <button className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-xl hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3">
-            <Calendar className="w-6 h-6" />
-            Book a Strategy Call
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          
-          <button className="group border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-lg font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 flex items-center gap-3">
-            <Mail className="w-6 h-6" />
-            Reply to My Email Instead
-          </button>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-3 gap-4 md:gap-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <div className="text-center">
-            <div className="text-3xl font-black text-blue-500 mb-2">15 min</div>
-            <p className="text-gray-400 text-sm md:text-base">Strategy call duration</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-black text-blue-500 mb-2">No</div>
-            <p className="text-gray-400 text-sm md:text-base">High-pressure sales tactics</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-black text-blue-500 mb-2">100%</div>
-            <p className="text-gray-400 text-sm md:text-base">Honest assessment</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <footer className="relative z-10 mt-24 pt-12 border-t border-blue-500/20">
-        <div className="max-w-7xl mx-auto text-center">
-          {/* Logo and Brand */}
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <img 
-              src="/assets/logo/moz-logo.png"
-              alt="MOZ Growth Logo"
-             className="h-20 w-auto"
-            />
-            <h3 className="text-2xl font-black text-white">
-              MOZ <span className="text-blue-500">GROWTH</span>
-            </h3>
-          </div>
-          
-          <p className="text-lg font-semibold text-blue-500 mb-4">
-            Morrissey R. Rodriguez
-          </p>
-          <p className="text-gray-500 mb-4">
-            © 2025 Elite Car Rental Marketing. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-600">
-            Specialized marketing strategies for luxury and exotic car rental businesses.
-          </p>
-        </div>
-      </footer>
     </section>
   );
 };
