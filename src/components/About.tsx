@@ -43,7 +43,6 @@ const About = () => {
             {/* Desktop: Vertical Layout */}
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent rounded-2xl"></div>
                 <img 
                   src="/assets/images/moz-bio-1.jpg"
                   alt="Marketing Strategist"
