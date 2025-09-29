@@ -66,7 +66,7 @@ const CaseStudy = () => {
         <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.65s' }}>
           <div className="max-w-xl mx-auto">
             <img 
-              src="/src/Assets/Image of Moz/20250926_132206(1).jpg"
+              src="/assets/images/client-success.jpg"
               alt="Client Success Story"
               className="w-full h-auto rounded-2xl shadow-2xl border border-blue-500/20"
             />
