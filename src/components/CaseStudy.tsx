@@ -26,8 +26,6 @@ const CaseStudy = () => {
 
         {/* Main Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-gold-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.3s' }}>
           <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
                style={{ animationDelay: '0.3s' }}>
             <DollarSign className="w-12 h-12 text-blue-500 mx-auto mb-4" />
@@ -40,8 +38,6 @@ const CaseStudy = () => {
             <p className="text-gray-400 text-lg">Ad Spend</p>
           </div>
 
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-gold-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.4s' }}>
           <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
                style={{ animationDelay: '0.4s' }}>
             <TrendingUp className="w-12 h-12 text-blue-500 mx-auto mb-4" />
@@ -54,8 +50,6 @@ const CaseStudy = () => {
             <p className="text-gray-400 text-lg">Revenue Generated</p>
           </div>
 
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-gold-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.5s' }}>
           <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
                style={{ animationDelay: '0.5s' }}>
             <Calendar className="w-12 h-12 text-blue-500 mx-auto mb-4" />
