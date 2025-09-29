@@ -1,123 +1,91 @@
 import React from 'react';
-import { TrendingUp, DollarSign, Calendar } from 'lucide-react';
-import CountingNumber from './ui/CountingNumber';
+import { Calendar, Mail, ArrowRight } from 'lucide-react';
 
-const CaseStudy = () => {
+const FinalCTA = () => {
   return (
-    <section data-section="case-study" className="py-24 px-6 relative overflow-hidden">
+    <section className="py-24 px-6 relative overflow-hidden">
       {/* Background */}
       <div 
-        className="absolute inset-0 parallax-bg opacity-30"
+        className="absolute inset-0 parallax-bg hidden md:block"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/assets/images/IMG_20250926_160310.jpg)',
         }}
       >
-        <div className="absolute inset-0 bg-dark-900/90"></div>
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-black mb-4 animate-fade-in-up">
-          The Numbers Don't Lie
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 animate-fade-in-up">
+          Ready to Get Your Fleet <span className="text-gradient-blue">Booked Out</span>?
         </h2>
         
-        <p className="text-xl text-gray-300 mb-16 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          Real results from a luxury car rental client in Los Angeles
+        <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" 
+           style={{ animationDelay: '0.2s' }}>
+          Start attracting premium clients who value luxury experiences.
         </p>
 
-        {/* Main Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.3s' }}>
-            <DollarSign className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-            <CountingNumber 
-              value={500}
-              prefix="$"
-              duration={1.5}
-              className="text-5xl md:text-6xl font-black text-blue-500 mb-2"
-            />
-            <p className="text-gray-400 text-lg">Ad Spend</p>
-          </div>
-
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.4s' }}>
-            <TrendingUp className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-            <CountingNumber 
-              value={2025}
-              prefix="$"
-              duration={2}
-              className="text-5xl md:text-6xl font-black text-blue-500 mb-2"
-            />
-            <p className="text-gray-400 text-lg">Revenue Generated</p>
-          </div>
-
-          <div className="bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 hover-lift animate-fade-in-up" 
-               style={{ animationDelay: '0.5s' }}>
-            <Calendar className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-            <CountingNumber 
-              value={30}
-              duration={1}
-              className="text-5xl md:text-6xl font-black text-blue-500 mb-2"
-            />
-            <p className="text-gray-400 text-lg">Days</p>
-          </div>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-up" 
+             style={{ animationDelay: '0.4s' }}>
+          <button className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-xl hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3">
+            <Calendar className="w-6 h-6" />
+            Book a Strategy Call
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+          
+          <button className="group border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-lg font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 flex items-center gap-3">
+            <Mail className="w-6 h-6" />
+            Reply to My Email Instead
+          </button>
         </div>
 
-        {/* Client Image */}
-        <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.65s' }}>
-          <div className="max-w-xl mx-auto">
-            <img 
-              src="/src/Assets/Image of Moz/20250926_132206(1).jpg"
-              alt="Client Success Story"
-              className="w-full h-auto rounded-2xl shadow-2xl border border-blue-500/20"
-            />
+        {/* Trust Indicators */}
+        <div className="grid grid-cols-3 gap-4 md:gap-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="text-center">
+      </div>
+      
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+            <div className="text-3xl font-black text-blue-500 mb-2">15 min</div>
+            <p className="text-gray-400 text-sm md:text-base">Strategy call duration</p>
           </div>
-        </div>
-
-        {/* ROI Highlight */}
-        <div className="bg-dark-800/80 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 animate-fade-in-up text-left" 
-             style={{ animationDelay: '0.6s' }}>
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-500 mb-8 text-center">
-              Client Story
-            </h3>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              Before we launched the campaign, this client was averaging just 3–4 inquiries a month.
-              The majority of their month was quiet. Leads came in here and there, but nothing consistent.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6 font-semibold">
-              Then we dropped $500 on paid ads, and flipped the switch:
-            </p>
-            <div className="text-lg md:text-xl text-gray-200 leading-relaxed mb-6 space-y-2">
-              <p className="flex items-center justify-start gap-3">
-                <span className="text-green-500 font-bold">✅</span>
-                <span>14 Qualified Inquiries in 30 Days</span>
-              </p>
-              <p className="flex items-center justify-start gap-3">
-                <span className="text-green-500 font-bold">✅</span>
-                <span>3 Solid Bookings (that I confirmed from 9)</span>
-              </p>
-              <p className="flex items-center justify-start gap-3">
-                <span className="text-green-500 font-bold">✅</span>
-                <span>$2,025 in Revenue</span>
-              </p>
-            </div>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              But here's the wild part…
-            </p>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              He missed out on even more bookings, because some vehicles weren't available.
-            </p>
-            <p className="text-xl md:text-2xl text-blue-400 leading-relaxed font-semibold">
-              We weren't working with a huge fleet. Just 3 exotics. And they got snapped up fast.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6 mt-6">
-              So what started as a simple ad campaign turned into proof that we could generate the demand. Now it's just about scaling.
-            </p>
+          <div className="text-center">
+            <div className="text-3xl font-black text-blue-500 mb-2">No</div>
+            <p className="text-gray-400 text-sm md:text-base">High-pressure sales tactics</p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-black text-blue-500 mb-2">100%</div>
+            <p className="text-gray-400 text-sm md:text-base">Honest assessment</p>
           </div>
         </div>
       </div>
+
+      {/* Mobile Background */}
+      <div className="absolute inset-0 bg-dark-900 md:hidden"></div>
+
+      {/* Footer */}
+      <footer className="relative z-10 mt-24 pt-12 border-t border-blue-500/20">
+        <div className="max-w-7xl mx-auto text-center">
+          {/* Logo and Brand */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <img 
+              src="/assets/logo/moz-logo.png"
+              alt="MOZ Growth Logo"
+             className="h-20 w-auto"
+            />
+            <h3 className="text-2xl font-black text-white">
+              MOZ <span className="text-blue-500">GROWTH</span>
+            </h3>
+          </div>
+          
+          <p className="text-lg font-semibold text-blue-500 mb-4">
+            Morrissey R. Rodriguez
+          </p>
+          <p className="text-gray-500 mb-4">
+            © 2025 Elite Car Rental Marketing. All rights reserved.
+          </p>
+          <p className="text-sm text-gray-600">
+            Specialized marketing strategies for luxury and exotic car rental businesses.
+          </p>
+        </div>
+      </footer>
     </section>
   );
 };
 
-export default CaseStudy;
+export default FinalCTA;
