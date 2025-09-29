@@ -62,6 +62,17 @@ const CaseStudy = () => {
           </div>
         </div>
 
+        {/* Client Image */}
+        <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.65s' }}>
+          <div className="max-w-xl mx-auto">
+            <img 
+              src="/src/Assets/Image of Moz/20250926_132206(1).jpg"
+              alt="Client Success Story"
+              className="w-full h-auto rounded-2xl shadow-2xl border border-blue-500/20"
+            />
+          </div>
+        </div>
+
         {/* ROI Highlight */}
         <div className="bg-dark-800/80 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 animate-fade-in-up text-left" 
              style={{ animationDelay: '0.6s' }}>
