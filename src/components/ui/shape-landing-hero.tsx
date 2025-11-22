@@ -185,15 +185,10 @@ function HeroGeometric({
                         animate="visible"
                         className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
                     >
-                        <a 
-                            href="https://calendly.com/morrisseyr-rodriguez/30min"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3"
-                        >
-                            Book a Strategy Call
+                        <button className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3">
+                            Send Me an Email
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </a>
+                        </button>
                         
                         <button 
                             onClick={() => {

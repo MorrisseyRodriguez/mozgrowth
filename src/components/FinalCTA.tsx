@@ -30,14 +30,9 @@ const FinalCTA = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-up" 
              style={{ animationDelay: '0.4s' }}>
           <button className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-xl hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3">
-            <Calendar className="w-6 h-6" />
-            Book a Strategy Call
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          
-          <button className="group border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-lg font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-105 flex items-center gap-3">
             <Mail className="w-6 h-6" />
-            Reply to My Email Instead
+            Send Me an Email
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 
