@@ -74,6 +74,11 @@ const FinalCTA = () => {
           <p className="text-lg font-semibold text-blue-500 mb-4">
             Morrissey R. Rodriguez
           </p>
+          <p className="text-lg text-gray-400 mb-4">
+            <a href="mailto:morrisseyr.rodriguez@gmail.com" className="hover:text-blue-500 transition-colors">
+              morrisseyr.rodriguez@gmail.com
+            </a>
+          </p>
           <p className="text-gray-500 mb-4">
             © 2025 Elite Car Rental Marketing. All rights reserved.
           </p>
