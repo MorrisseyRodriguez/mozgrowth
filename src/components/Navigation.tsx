@@ -57,7 +57,7 @@ const Navigation = () => {
               Services
             </button>
             <a 
-              href="mailto:morrissey@mozgrowth.com"
+              href="mailto:morrisseyr.rodriguez@gmail.com"
               className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-2 rounded-lg font-bold hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105"
             >
               Send Email
@@ -90,7 +90,7 @@ const Navigation = () => {
                 Services
               </button>
               <a 
-                href="mailto:morrissey@mozgrowth.com"
+                href="mailto:morrisseyr.rodriguez@gmail.com"
                 className="block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-lg font-bold text-center hover:from-blue-700 hover:to-blue-500 transition-all duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
