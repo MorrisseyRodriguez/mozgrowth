@@ -81,20 +81,22 @@ const CaseStudy = () => {
               Client Story
             </h3>
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              Before we launched the campaign, this client was averaging just 3–4 inquiries a month.
-              The majority of their month was quiet. Leads came in here and there, but nothing consistent.
+              Before launching the campaign, the client was averaging 3 to 4 inquiries per month with no consistency.
             </p>
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6 font-semibold">
-              Then we dropped $500 on paid ads, and flipped the switch:
+              We launched paid ads with a $500 budget.
+            </p>
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
+              Over the course of 3 weeks:
             </p>
             <div className="text-lg md:text-xl text-gray-200 leading-relaxed mb-6 space-y-2">
               <p className="flex items-center justify-start gap-3">
                 <span className="text-green-500 font-bold">✅</span>
-                <span>14 Qualified Inquiries in 30 Days</span>
+                <span>10 Bookings</span>
               </p>
               <p className="flex items-center justify-start gap-3">
                 <span className="text-green-500 font-bold">✅</span>
-                <span>3 Solid Bookings (that I confirmed from 9)</span>
+                <span>3 Confirmed Trips</span>
               </p>
               <p className="flex items-center justify-start gap-3">
                 <span className="text-green-500 font-bold">✅</span>
@@ -102,16 +104,10 @@ const CaseStudy = () => {
               </p>
             </div>
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              But here's the wild part…
-            </p>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6">
-              He missed out on even more bookings, because some vehicles weren't available.
+              After that initial batch, results continued and demand stayed consistent.
             </p>
             <p className="text-xl md:text-2xl text-blue-400 leading-relaxed font-semibold">
-              We weren't working with a huge fleet. Just 3 exotics. And they got snapped up fast.
-            </p>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-6 mt-6">
-              So what started as a simple ad campaign turned into proof that we could generate the demand. Now it's just about scaling.
+              Just 3 vehicles. Proof of demand generation, not hype.
             </p>
           </div>
         </div>

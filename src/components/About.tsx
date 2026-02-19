@@ -38,8 +38,8 @@ const About = () => {
           {/* Right: Content */}
           <div className="animate-slide-in-right">
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              Your <span className="text-gradient-blue">Strategic Partner</span>,
-              <br />Not Another Agency
+              <span className="text-gradient-blue">Creative Performance Marketing</span>
+              <br />for Luxury Mobility
             </h2>
             
             <div className="mb-6">
@@ -50,10 +50,10 @@ const About = () => {
             
             <div className="text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
               <p>
-                I'm not running a factory. I'm not tossing around big promises just to land the deal and disappear when it flops.
+                I work with exotic car rentals, chauffeur services, and luxury transportation brands who need more than just ad management.
               </p>
               <p>
-                I work directly with a small group of exotic car rental owners who want real bookings, not pretty reports.
+                I diagnose what's actually blocking growth, design the strategic move, and execute demand systems that scale with your capacity.
               </p>
               
               {/* Read More Button for all devices */}
@@ -74,16 +74,16 @@ const About = () => {
               {/* Expandable content for all devices */}
               <div className={`${isExpanded ? 'block' : 'hidden'} space-y-4`}>
                 <p>
-                  I take results personally. If your calendar's empty, and you're not making money, I lose sleep.
+                  Most marketing fails because it treats symptoms, not root causes. Traffic without conversion strategy. Ads without demand alignment. Campaigns without business context.
                 </p>
                 <p>
-                  If you're looking for someone to treat your business like a number and move slowly towards your goals, I'm not the right person to work with.
+                  I review what's currently holding your business back from the next stage of growth, then design and execute the project that removes that bottleneck.
                 </p>
                 <p>
-                  If you want someone who can work alongside you like a partner and constantly work to deliver killer results…
+                  If you want strategic thinking combined with execution that moves the needle...
                 </p>
                 <p className="font-semibold text-blue-400">
-                  Let's chat and see what makes sense for your business.
+                  Let's discuss what makes sense for your business.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Direct Access</h3>
-                  <p className="text-gray-400">You work directly with me. No account managers, no middlemen.</p>
+                  <p className="text-gray-400">Direct access to strategic thinking and execution. No account managers.</p>
                 </div>
               </div>
 
@@ -104,8 +104,8 @@ const About = () => {
                   <Target className="w-6 h-6 text-blue-500" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Quality Over Quantity</h3>
-                  <p className="text-gray-400">I take on fewer clients to deliver exceptional results for each one.</p>
+                  <h3 className="text-xl font-bold mb-2">Strategic Focus</h3>
+                  <p className="text-gray-400">Focused growth initiatives designed around your specific bottlenecks.</p>
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ const About = () => {
                   <Zap className="w-6 h-6 text-blue-500" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Performance-Based</h3>
-                  <p className="text-gray-400">Your success is my success. I'm invested in your results, not just retainers.</p>
+                  <h3 className="text-xl font-bold mb-2">Demand Systems</h3>
+                  <p className="text-gray-400">Build scalable systems that turn attention into consistent booked revenue.</p>
                 </div>
               </div>
             </div>

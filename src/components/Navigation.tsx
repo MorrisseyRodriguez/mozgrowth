@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Instagram } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,14 +54,22 @@ const Navigation = () => {
               onClick={() => scrollToSection('services')}
               className="text-gray-300 hover:text-blue-500 transition-colors font-medium"
             >
-              Services
+              How I Work
             </button>
-            <a 
-              href="mailto:morrisseyr.rodriguez@gmail.com"
+            <a
+              href="https://www.instagram.com/moz.rodriguez/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-500 transition-colors font-medium flex items-center gap-2"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <button 
+              onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-2 rounded-lg font-bold hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105"
             >
-              Send Email
-            </a>
+              Book Discovery Call
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,15 +95,24 @@ const Navigation = () => {
                 onClick={() => scrollToSection('services')}
                 className="block w-full text-left text-gray-300 hover:text-blue-500 transition-colors font-medium py-2"
               >
-                Services
+                How I Work
               </button>
-              <a 
-                href="mailto:morrisseyr.rodriguez@gmail.com"
-                className="block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-lg font-bold text-center hover:from-blue-700 hover:to-blue-500 transition-all duration-300"
+              <a
+                href="https://www.instagram.com/moz.rodriguez/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-left text-gray-300 hover:text-blue-500 transition-colors font-medium py-2 flex items-center gap-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Send Email
+                <Instagram className="w-5 h-5" />
+                Instagram
               </a>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="block bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-lg font-bold text-center hover:from-blue-700 hover:to-blue-500 transition-all duration-300"
+              >
+                Book Discovery Call
+              </button>
             </div>
           </div>
         )}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Calendar, Mail, ArrowRight } from 'lucide-react';
+import { Calendar, Mail, ArrowRight, Instagram } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 const FinalCTA = () => {
   return (
@@ -8,7 +9,7 @@ const FinalCTA = () => {
       <div 
         className="absolute inset-0 parallax-bg"
         style={{
-          backgroundImage: 'url(/assets/images/IMG_20250926_160310.jpg)',
+          backgroundImage: 'url(/assets/images/file_00000000a24c71f7bfc0be442ae1e507.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -19,39 +20,32 @@ const FinalCTA = () => {
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 animate-fade-in-up">
-          Ready to Get Your Fleet <span className="text-gradient-blue">Booked Out</span>?
+          Ready to Scale Your <span className="text-gradient-blue">Luxury Fleet</span>?
         </h2>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" 
            style={{ animationDelay: '0.2s' }}>
-          Start attracting premium clients who value luxury experiences.
+          Let's identify what's blocking your growth and design the strategic move that removes it.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-up" 
-             style={{ animationDelay: '0.4s' }}>
-          <a 
-            href="mailto:morrisseyr.rodriguez@gmail.com"
-            className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-xl hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3"
-          >
-            <Mail className="w-6 h-6" />
-            Send Me an Email
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
+        {/* Contact Form Section */}
+        <div data-section="contact" className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <ContactForm />
         </div>
 
         {/* Trust Indicators */}
         <div className="grid grid-cols-3 gap-4 md:gap-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="text-center">
             <div className="text-3xl font-black text-blue-500 mb-2">15 min</div>
-            <p className="text-gray-400 text-sm md:text-base">Strategy call duration</p>
+            <p className="text-gray-400 text-sm md:text-base">Discovery call duration</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-black text-blue-500 mb-2">No</div>
-            <p className="text-gray-400 text-sm md:text-base">High-pressure sales tactics</p>
+            <p className="text-gray-400 text-sm md:text-base">High-pressure tactics</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-black text-blue-500 mb-2">100%</div>
-            <p className="text-gray-400 text-sm md:text-base">Honest assessment</p>
+            <p className="text-gray-400 text-sm md:text-base">Strategic assessment</p>
           </div>
         </div>
       </div>
@@ -79,11 +73,22 @@ const FinalCTA = () => {
               morrisseyr.rodriguez@gmail.com
             </a>
           </p>
+          <div className="flex justify-center mb-4">
+            <a
+              href="https://www.instagram.com/moz.rodriguez/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition-colors flex items-center gap-2"
+            >
+              <Instagram className="w-5 h-5" />
+              @moz.rodriguez
+            </a>
+          </div>
           <p className="text-gray-500 mb-4">
-            © 2025 Elite Car Rental Marketing. All rights reserved.
+            © 2025 MOZ Growth. All rights reserved.
           </p>
           <p className="text-sm text-gray-600">
-            Specialized marketing strategies for luxury and exotic car rental businesses.
+            Creative Performance Marketing for Luxury Mobility Brands
           </p>
         </div>
       </footer>

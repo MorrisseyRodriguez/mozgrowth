@@ -1,25 +1,25 @@
 import React from 'react';
-import { Search, Globe, Target } from 'lucide-react';
+import { Search, Target, Zap } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Search,
-      title: 'Google Ads',
-      description: 'Capture high-intent customers actively searching for exotic car rentals in your area.',
-      features: ['Search campaign optimization', 'Local targeting mastery', 'Keyword research & bidding']
+      title: 'Attention vs Monetization',
+      description: 'Diagnose whether your problem is getting attention or converting that attention into revenue.',
+      features: ['Traffic analysis', 'Conversion pathway review', 'Demand qualification']
     },
     {
-      icon: Globe,
-      title: 'High-Converting Websites',
-      description: 'Custom websites built specifically for exotic car rentals that turn visitors into bookings.',
-      features: ['Mobile-optimized design', 'Fast loading speeds', 'Booking-focused layouts']
+      icon: Zap,
+      title: 'Growth Bottleneck Identification',
+      description: 'Identify weak points in traffic, conversion, or offer that are limiting your next stage of growth.',
+      features: ['Business capacity analysis', 'Market positioning review', 'Competitive advantage mapping']
     },
     {
       icon: Target,
-      title: 'Strategic Focus',
-      description: 'I take your specific goals and create a custom plan to achieve them with marketing that connects your fleet to the high-intent customers looking for exactly what you offer.',
-      features: ['Goal-oriented planning', 'Custom strategy development', 'Results-focused execution']
+      title: 'Demand System Execution',
+      description: 'Design and execute focused growth initiatives that turn demand into consistent booked revenue.',
+      features: ['Paid acquisition systems', 'Conversion optimization', 'Scalable demand engines']
     }
   ];
 
@@ -28,17 +28,17 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black mb-6 animate-fade-in-up">
-            How I <span className="text-gradient-blue">Help</span>
+            How I <span className="text-gradient-blue">Work</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Everything you need to dominate your market and book out your fleet with premium clients.
+            I don't just run ads. I build demand systems aligned with your business capacity and goals.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
-            const isStrategicFocus = service.title === 'Strategic Focus';
+            const isStrategicFocus = service.title === 'Demand System Execution';
             return (
               <div 
                 key={service.title}

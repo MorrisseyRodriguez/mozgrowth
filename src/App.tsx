@@ -15,7 +15,6 @@ function App() {
       <About />
       <CaseStudy />
       <Services />
-      <Comparison />
       <FinalCTA />
     </div>
   );

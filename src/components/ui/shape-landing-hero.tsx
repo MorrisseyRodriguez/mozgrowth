@@ -74,8 +74,8 @@ function ElegantShape({
 
 function HeroGeometric({
     badge = "Design Collective",
-    title1 = "Marketing Built to Keep Your Cars on the Road,",
-    title2 = "Not in the Garage",
+    title1 = "Creative Performance Marketing for",
+    title2 = "Luxury Mobility Brands",
 }: {
     badge?: string;
     title1?: string;
@@ -154,14 +154,14 @@ function HeroGeometric({
                         animate="visible"
                     >
                         <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-                            <span>A Partner Who Keeps Your Cars</span>
+                            <span>{title1}</span>
                             <br />
                             <span
                                 className={cn(
                                     "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
                                 )}
                             >
-                                on the Road, Not in the Garage
+                                {title2}
                             </span>
                         </h1>
                     </motion.div>
@@ -172,9 +172,8 @@ function HeroGeometric({
                         initial="hidden"
                         animate="visible"
                     >
-                        <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-                            Get More Bookings. More recurring clients.{' '}
-                            <span className="text-blue-500 font-semibold">Without Hiring an Agency</span>.
+                        <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+                            I identify what's blocking your growth, design the strategic move, and execute demand systems that turn attention into booked revenue.
                         </p>
                     </motion.div>
 
@@ -185,13 +184,18 @@ function HeroGeometric({
                         animate="visible"
                         className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
                     >
-                        <a 
-                            href="mailto:morrisseyr.rodriguez@gmail.com"
+                        <button 
+                            onClick={() => {
+                                const contactSection = document.querySelector('[data-section="contact"]');
+                                if (contactSection) {
+                                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                             className="group bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-blue-700 hover:to-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 flex items-center gap-3"
                         >
-                            Send Me an Email
+                            Book a Discovery Call
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </a>
+                        </button>
                         
                         <button 
                             onClick={() => {

@@ -4,8 +4,8 @@ import { HeroGeometric } from './ui/shape-landing-hero';
 const Hero = () => {
   return (
     <HeroGeometric
-      title1="Marketing Built to Keep Your Cars on the Road,"
-      title2="Not in the Garage"
+      title1="Creative Performance Marketing for"
+      title2="Luxury Mobility Brands"
     />
   );
 };
