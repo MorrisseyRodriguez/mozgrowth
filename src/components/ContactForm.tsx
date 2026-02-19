@@ -36,7 +36,7 @@ const ContactForm = () => {
           to_email: 'morrisseyr.rodriguez@gmail.com',
           message: `Discovery Call Request from ${formData.name} at ${formData.company}`
         },
-        'YOUR_PUBLIC_KEY'
+        'OZo1S52ylqKZv5AWM'
       );
 
       // Send auto-reply to the user
@@ -48,7 +48,7 @@ const ContactForm = () => {
           to_email: formData.email,
           company_name: formData.company
         },
-        'YOUR_PUBLIC_KEY'
+        'OZo1S52ylqKZv5AWM'
       );
 
       setIsSubmitted(true);
