@@ -69,8 +69,8 @@ const FinalCTA = () => {
             Morrissey R. Rodriguez
           </p>
           <p className="text-lg text-gray-400 mb-4">
-            <a href="mailto:morrisseyr.rodriguez@gmail.com" className="hover:text-blue-500 transition-colors">
-              morrisseyr.rodriguez@gmail.com
+            <a href="mailto:morrisseyr@moz-growth.com" className="hover:text-blue-500 transition-colors">
+              morrisseyr@moz-growth.com
             </a>
           </p>
           <div className="flex justify-center mb-4">
