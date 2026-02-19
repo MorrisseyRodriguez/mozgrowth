@@ -33,7 +33,6 @@ const ContactForm = () => {
           from_name: formData.name,
           company_name: formData.company,
           from_email: formData.email,
-          recipient_email: 'morrisseyr@moz-growth.com',
           message: `Discovery Call Request from ${formData.name} at ${formData.company}`
         },
         'OZo1S52ylqKZv5AWM'
