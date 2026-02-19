@@ -25,9 +25,10 @@ const ContactForm = () => {
     setError('');
 
     try {
+      // Send the main contact form email
       await emailjs.send(
         'service_uvrkx7k',
-        'template_discovery_call',
+        'template_giwu14v',
         {
           from_name: formData.name,
           company_name: formData.company,
@@ -35,7 +36,19 @@ const ContactForm = () => {
           to_email: 'morrisseyr.rodriguez@gmail.com',
           message: `Discovery Call Request from ${formData.name} at ${formData.company}`
         },
-        'YOUR_PUBLIC_KEY' // Replace with your actual EmailJS public key
+        'YOUR_PUBLIC_KEY'
+      );
+
+      // Send auto-reply to the user
+      await emailjs.send(
+        'service_uvrkx7k',
+        'template_bqbjmhk',
+        {
+          to_name: formData.name,
+          to_email: formData.email,
+          company_name: formData.company
+        },
+        'YOUR_PUBLIC_KEY'
       );
 
       setIsSubmitted(true);
