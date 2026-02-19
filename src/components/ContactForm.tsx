@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
-    company: '',
+    company_name: '',
     email: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,37 +24,34 @@ const ContactForm = () => {
     setIsSubmitting(true);
     setError('');
 
+    const templateParams = {
+      name: formData.name,
+      company_name: formData.company_name,
+      email: formData.email
+    };
+
     try {
-      // Send the main contact form email
+      // Send admin notification email
       await emailjs.send(
         'service_uvrkx7k',
         'template_giwu14v',
-        {
-          from_name: formData.name,
-          company_name: formData.company,
-          from_email: formData.email,
-          message: `Discovery Call Request from ${formData.name} at ${formData.company}`
-        },
+        templateParams,
         'OZo1S52ylqKZv5AWM'
       );
 
-      // Send auto-reply to the user
+      // Send auto-reply email
       await emailjs.send(
         'service_uvrkx7k',
         'template_bqbjmhk',
-        {
-          to_name: formData.name,
-          to_email: formData.email,
-          company_name: formData.company
-        },
+        templateParams,
         'OZo1S52ylqKZv5AWM'
       );
 
       setIsSubmitted(true);
-      setFormData({ name: '', company: '', email: '' });
+      setFormData({ name: '', company_name: '', email: '' });
     } catch (error) {
       console.error('EmailJS error:', error);
-      setError('Failed to send message. Please try again or email directly.');
+      setError('Something went wrong. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);
     }
@@ -65,9 +62,9 @@ const ContactForm = () => {
       <div className="max-w-md mx-auto bg-dark-800/80 backdrop-blur-sm p-8 rounded-2xl border border-green-500/20">
         <div className="text-center">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-green-500 mb-2">Request Sent!</h3>
+          <h3 className="text-2xl font-bold text-green-500 mb-2">Success!</h3>
           <p className="text-gray-300 mb-4">
-            I'll review your request and get back to you within 24 hours to schedule our discovery call.
+            Request received. I'll review your business and follow up shortly.
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
@@ -103,14 +100,14 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+            <label htmlFor="company_name" className="block text-sm font-medium text-gray-300 mb-2">
               Company Name *
             </label>
             <input
               type="text"
-              id="company"
-              name="company"
-              value={formData.company}
+              id="company_name"
+              name="company_name"
+              value={formData.company_name}
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-dark-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
