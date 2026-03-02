@@ -16,7 +16,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent rounded-2xl"></div>
                 <img 
-                  src="/assets/images/moz-bio-2.jpg"
+                  src="/assets/images/moz-bio-1.jpg"
                   alt="Marketing Results Screenshot"
                   className="w-full h-64 object-cover rounded-2xl shadow-2xl"
                 />
@@ -27,7 +27,7 @@ const About = () => {
             <div className="hidden lg:block">
               <div className="relative">
                 <img 
-                  src="/assets/images/moz-bio-2.jpg"
+                  src="/assets/images/moz-bio-1.jpg"
                   alt="Marketing Results Screenshot"
                   className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 />
